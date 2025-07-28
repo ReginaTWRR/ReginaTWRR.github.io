@@ -28,7 +28,10 @@
                 <!-- introduction -->
                 <h2>Introduction to philosophy</h2>
                 <figure>
-                    <img src = "./images/theThinker.JPG" width = "300" title = "The Thinker" alt = "The Thinker">
+                    <img src = "./images/theThinker.JPG" id = "thinker" width = "300" title = "click me!" alt = "The Thinker">
+                    <figcaption>
+                        click image for a surprise
+                    </figcaption>
                     <figcaption>
                         <a href = "https://commons.wikimedia.org/wiki/File:Le_Penseur_by_Rodin_(Kunsthalle_Bielefeld)_2014-04-10.JPG" target = "_blank">
                             By Kaisching, under Creative Commons Attribution Share-Alike 4.0 International license
@@ -289,6 +292,17 @@
                         shoes. He is a very misunderstood guy. I'm absolutely fascinated by
                         Nietzsche and the impact he has left on philosophy.
                     </p>
+                </article>
+                <article>
+                    <h3>Other philosophers</h3>
+                    <h4>Are there other philosophers you admire?</h4>
+                    <p>Tell me about them!</p>
+                    <input id = "philosopher" type = "text" placeholder = "Enter philosopher"><br>
+                    <input id = "quote" type = "text" placeholder = "Enter quote"><br>
+                    <button id = "addPhilosopher">Add</button>
+                    <button id = "removePhilosopher">Remove</button>
+                    <button id = "resetArea">Reset</button>
+                    <div id = "dynamicArea"></div>
                 </article>
                 <h2>Sources</h2>
                 <ol>
@@ -671,54 +685,20 @@
                     <div id = "gameBox">
                         <section class = "gameView" id = "view1">
                             <div class = "trolley" id = "trolley1"></div>
-                            <div class = "tracks" id = "tracks1"></div>
-                            <div class = "tracks" id = "tracks2"></div>
-                            <div class = "tracks" id = "tracks3"></div>
-                            <div class = "tracks" id = "tracks4"></div>
-                            <div class = "tracks" id = "tracks5"></div>
-                            <div class = "tracks" id = "tracks6"></div>
-                            <div class = "tracks" id = "tracks7"></div>
-                            <div class = "tracks" id = "tracks8"></div>
-                            <div class = "innocent" id = "innocent1"></div>
-                            <div class = "innocent" id = "innocent2"></div>
-                            <div class = "innocent" id = "innocent3"></div>
-                            <div class = "innocent" id = "innocent4"></div>
-                            <div class = "innocent" id = "innocent5"></div>
-                            <div class = "innocent" id = "innocent6"></div>
                             <button id = "startButton1">Start</button>
                             <button id = "switchButton">Switch</button>
                             <button id = "resetButton1">Reset</button>
                         </section>
                         <section class = "gameView" id = "view2">
                             <div class = "trolley" id = "trolley2"></div>
-                            <div class = "tracks" id = "tracks9"></div>
-                            <div class = "tracks" id = "tracks10"></div>
-                            <div class = "tracks" id = "tracks11"></div>
-                            <div class = "tracks" id = "tracks12"></div>
-                            <div class = "tracks" id = "tracks13"></div>
-                            <div class = "fatMan"></div>
-                            <div class = "innocent" id = "innocent7"></div>
-                            <div class = "innocent" id = "innocent8"></div>
-                            <div class = "innocent" id = "innocent9"></div>
-                            <div class = "innocent" id = "innocent10"></div>
-                            <div class = "innocent" id = "innocent11"></div>
+                            <div class = "fatMan" id = "fatMan"></div>
                             <button id = "startButton2">Start</button>
                             <button id = "pushButton1">Push</button>
                             <button id = "resetButton2">Reset</button>
                         </section>
                         <section class = "gameView" id = "view3">
                             <div class = "trolley" id = "trolley3"></div>
-                            <div class = "tracks" id = "tracks14"></div>
-                            <div class = "tracks" id = "tracks15"></div>
-                            <div class = "tracks" id = "tracks16"></div>
-                            <div class = "tracks" id = "tracks17"></div>
-                            <div class = "tracks" id = "tracks18"></div>
-                            <div class = "fatVillain"></div>
-                            <div class = "innocent" id = "innocent12"></div>
-                            <div class = "innocent" id = "innocent13"></div>
-                            <div class = "innocent" id = "innocent14"></div>
-                            <div class = "innocent" id = "innocent15"></div>
-                            <div class = "innocent" id = "innocent16"></div>
+                            <div class = "fatVillain" id = "fatVillain"></div>
                             <button id = "startButton3">Start</button>
                             <button id = "pushButton2">Push</button>
                             <button id = "resetButton3">Reset</button>
