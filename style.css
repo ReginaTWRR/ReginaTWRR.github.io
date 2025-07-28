@@ -339,6 +339,14 @@ button {
     margin: 2em;
     padding: 0.5em;
 }
+#addPhilosopher, #removePhilosopher, #resetArea {
+    margin: 0px;
+    margin-top: 0.5em;
+}
+input {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
 /* easter egg */
 #hidden {
     opacity: 0;
