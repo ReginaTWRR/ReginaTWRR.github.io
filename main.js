@@ -335,6 +335,21 @@ function resetMan(manNumber) {
     }
     currentMan.style.top = topMargin + "px";
 }
+/* js for full screen */
+const fullScreenButton = document.querySelector("#fullScreenButton");
+const exitScreenButton = document.querySelector("#exitScreenButton");
+fullScreenButton.addEventListener("click", enterFullScreen);
+exitScreenButton.addEventListener("click", exitFullScreen);
+function enterFullScreen() {
+    if (document.documentElement.requestFullscreen) {
+        document.documentElement.requestFullscreen();
+    }
+}
+function exitFullScreen() {
+    if (document.exitFullscreen) {
+        document.exitFullscreen();
+    }
+}
 /* easter egg */
 const hidden = document.querySelector("#hidden");
 hidden.addEventListener("mouseover", function() {
