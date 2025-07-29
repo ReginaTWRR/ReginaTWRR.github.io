@@ -16,6 +16,10 @@ h1, h2, h3, h4, p, li, ul, ol, figcaption, summary, button, div, a {
     font-family: "Roboto", monospace;
     color: #023047;
 }
+p::selection {
+    background: #0075FA;
+    color: white;
+}
 body, button {
     background: #FB8500;
 }
@@ -331,8 +335,14 @@ a, summary {
     text-decoration: none;
     color: purple;
 }
+#toTop {
+    color: inherit;
+}
 summary:hover, a:hover {
     color: #0075FA;
+}
+#toTop:hover {
+    color: unset;
 }
 button:hover {
     background: #FFB703;
@@ -348,6 +358,12 @@ button {
 input {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
+}
+/* css for rwd */
+@media (max-width: 800px) {
+    #qrcode {
+        display: none;
+    }
 }
 /* easter egg */
 #hidden {
