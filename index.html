@@ -3,13 +3,16 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
         <title>philosophy</title>
         <script src = "main.js" defer></script>
         <link rel = "stylesheet" href = "style.css">
+        <link rel = "icon" type = "image/x-icon" href = "./images/favicon.ico">
     </head>
     <body>
         <header>
-            <h1>Philosophy</h1>
+            <h1 id = "top">Philosophy</h1>
         </header>
         <nav> <!-- menu system -->
             <!-- hamburger icon for mobile -->
@@ -22,6 +25,9 @@
                 <li><button class = "navButtons" id = "page4button">The Trolley Problem</button></li>
                 <p id = "hidden">DON'T LOOK HERE I DON'T EXIST</p>
             </ul>
+            <button id = "fullScreenButton">full screen</button>
+            <br>
+            <button id = "exitScreenButton">exit full screen</button>
         </nav>
         <main id = "pagecontainer">
             <section class = "page" id = "page1">
@@ -51,6 +57,7 @@
                     beautiful. I suppose you could say then that we were always meant to ask these
                     questions.
                 </p>
+                <!-- sources -->
                 <h2>Source</h2>
                 <ol>
                     <li>
@@ -64,6 +71,7 @@
                 <!-- famous philosophers -->
                 <h2>Famous philosophers</h2>
                 <article>
+                    <!-- socrates -->
                     <h3>Socrates</h3>
                     <h4>"The life which is unexamined is not worth living."</h4>
                     <figure>
@@ -144,6 +152,7 @@
                     </p>
                 </article>
                 <article>
+                    <!-- descartes -->
                     <h3>René Descartes</h3>
                     <h4>"I think therefore I am."</h4>
                     <figure>
@@ -218,6 +227,7 @@
                     </p>
                 </article>
                 <article>
+                    <!-- nietzsche -->
                     <h3>Friedrich Nietzsche</h3>
                     <h4>"Man is something to be surpassed."</h4>
                     <figure>
@@ -294,6 +304,7 @@
                     </p>
                 </article>
                 <article>
+                    <!-- others (interactive part) -->
                     <h3>Other philosophers</h3>
                     <h4>Are there other philosophers you admire?</h4>
                     <p>Tell me about them!</p>
@@ -304,6 +315,7 @@
                     <button id = "resetArea">Reset</button>
                     <div id = "dynamicArea"></div>
                 </article>
+                <!-- sources -->
                 <h2>Sources</h2>
                 <ol>
                     <li>
@@ -330,6 +342,7 @@
                 <!-- branches of philosophy -->
                 <h2>Branches of philosophy</h2>
                 <article>
+                    <!-- epistemology -->
                     <h3>Epistemology</h3>
                     <figure>
                         <img src = "./images/knowledge.png" width = "400" title = "Definition of knowledge" alt = "Definition of knowledge">
@@ -360,6 +373,7 @@
                     </p>
                 </article>
                 <article>
+                    <!-- ethics -->
                     <h3>Ethics</h3>
                     <figure>
                         <img src = "./images/ethics.png" width = "400" title = "Ethics" alt = "Ethics">
@@ -511,6 +525,7 @@
                         morality is mostly subjective but there are still absolute moral truths.
                     </p>
                 </article>
+                <!-- sources -->
                 <h2>Sources</h2>
                 <ol>
                     <li>
@@ -611,6 +626,7 @@
                     </p>
                 </article>
                 <article>
+                    <!-- variations -->
                     <h3>What are some variations of the trolley problem?</h3>
                     <details>
                         <summary>The Fat Man</summary>
@@ -681,6 +697,7 @@
                     </p>
                 </article>
                 <article>
+                    <!-- mini game -->
                     <h3>Mini Game</h3>
                     <div id = "gameBox">
                         <section class = "gameView" id = "view1">
@@ -712,6 +729,7 @@
                         </ul>
                     </div>
                 </article>
+                <!-- sources -->
                 <h2>Sources</h2>
                 <ol>
                     <li>
@@ -737,5 +755,10 @@
                 </ol>
             </section>
         </main>
+        <!-- end -->
+        <footer>
+            <img id = "qrcode" src = "./images/qrcode.png" width = "300" title = "scan me!" alt = "QR Code">
+            <button><a id = "toTop" href = "#top">back to top</a></button>
+        </footer>
     </body>
 </html>
