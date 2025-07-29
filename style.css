@@ -247,6 +247,7 @@ nav {
 }
 #trolley1, #trolley2, #trolley3 {
     margin-top: 200px;
+    transition: all 1s;
 }
 #tracks1, #tracks9, #tracks14 {
     margin-top: 250px;
@@ -324,6 +325,7 @@ nav {
 .fatMan, .fatVillain {
     margin-top: 175px;
     margin-left: 250px;
+    transition: all 0.5s;
 }
 a, summary {
     text-decoration: none;
