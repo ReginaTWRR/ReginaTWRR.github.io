@@ -1,0 +1,15 @@
+{
+    "name": "WebdevA2 Philosophy",
+    "short_name": "252336R",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#FB8500",
+    "icons": [
+        {
+            "src": "./images/favicon.ico",
+            "sizes": "64x64",
+            "type": "image/ico"
+        }
+    ]
+}
