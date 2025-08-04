@@ -16,50 +16,48 @@
             <h1 id = "top">Philosophy</h1>
         </header>
         <nav> <!-- menu system -->
-            <!-- hamburger icon for mobile -->
             <button id = "hamIcon"><strong>三</strong></button>
             <ul>
                 <li><button class = "navButtons" id = "page1button">Introduction</button></li>
-                <br>
                 <li><button class = "navButtons" id = "page2button">Famous philosophers</button></li>
                 <li><button class = "navButtons" id = "page3button">Branches of philosophy</button></li>
                 <li><button class = "navButtons" id = "page4button">The Trolley Problem</button></li>
-                <p id = "hidden">DON'T LOOK HERE I DON'T EXIST</p>
             </ul>
-            <button id = "fullScreenButton">full screen</button>
-            <br>
-            <button id = "exitScreenButton">exit full screen</button>
+            <p id = "hidden">DON'T LOOK HERE I DON'T EXIST</p>
         </nav>
         <main id = "pagecontainer">
             <section class = "page" id = "page1">
                 <!-- introduction -->
                 <h2>Introduction to philosophy</h2>
-                <figure>
-                    <img src = "./images/theThinker.JPG" id = "thinker" width = "300" title = "click me!" alt = "The Thinker">
-                    <figcaption>
-                        click image for a surprise
-                    </figcaption>
-                    <figcaption>
-                        <a href = "https://commons.wikimedia.org/wiki/File:Le_Penseur_by_Rodin_(Kunsthalle_Bielefeld)_2014-04-10.JPG" target = "_blank">
-                            By Kaisching, under Creative Commons Attribution Share-Alike 4.0 International license
-                        </a>
-                    </figcaption>
-                </figure>
-                <p>Philosophy is the rational, abstract, and methodical study of reality as a whole
-                    or of the fundamental dimensions of human existence and experience. It comes
-                    from the Greek word philosophia, which is translated through Latin to "love of
-                    wisdom". A major component of the intellectual histories of many civilisations
-                    is philosophical investigation. <sup>[1]</sup>
-                </p>
-                <p>Philosophy is founded by people who overthink. People who refuse to settle for
-                    the easy explanation. People who insist on complicating everything beyond
-                    reason. The fact is that overthinking can sometimes produce some pretty
-                    remarkable ideas about the world. There is this view that our existence as
-                    humans is just a way for the universe to experience itself. I think that's
-                    beautiful. I suppose you could say then that we were always meant to ask these
-                    questions.
-                </p>
-                <iframe src = "https://www.youtube.com/embed/mIYdx6lDDhg?si=sbR3fmBKdcMgCfnr" width = "400" height = "200"></iframe>
+                <div class = "flexDiv">
+                    <figure>
+                        <img src = "./images/theThinker.JPG" id = "thinker" width = "300" title = "click me!" alt = "The Thinker">
+                        <figcaption>
+                            click image for a surprise
+                            <br>
+                            <a href = "https://commons.wikimedia.org/wiki/File:Le_Penseur_by_Rodin_(Kunsthalle_Bielefeld)_2014-04-10.JPG" target = "_blank">
+                                By Kaisching, under Creative Commons Attribution Share-Alike 4.0 International license
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <div class = "textDiv"> <!-- put in a div so that p stacks vertically-->
+                        <p>Philosophy is the rational, abstract, and methodical study of reality as a whole
+                            or of the fundamental dimensions of human existence and experience. It comes
+                            from the Greek word philosophia, which is translated through Latin to "love of
+                            wisdom". A major component of the intellectual histories of many civilisations
+                            is philosophical investigation. <sup>[1]</sup>
+                        </p>
+                        <p>Philosophy is founded by people who overthink. People who refuse to settle for
+                            the easy explanation. People who insist on complicating everything beyond
+                            reason. The fact is that overthinking can sometimes produce some pretty
+                            remarkable ideas about the world. There is this view that our existence as
+                            humans is just a way for the universe to experience itself. I think that's
+                            beautiful. I suppose you could say then that we were always meant to ask these
+                            questions.
+                        </p>
+                    </div>
+                </div>
+                <iframe src = "https://www.youtube.com/embed/mIYdx6lDDhg?si=sbR3fmBKdcMgCfnr" width = "1000" height = "500"></iframe>
                 <!-- sources -->
                 <h2>Source</h2>
                 <ol>
@@ -77,23 +75,25 @@
                     <!-- socrates -->
                     <h3>Socrates</h3>
                     <h4>"The life which is unexamined is not worth living."</h4>
-                    <figure>
-                        <img src = "./images/socrates.jpg" width = "300" title = "Socrates" alt = "Socrates">
-                        <figcaption>
-                            <a href = "https://commons.wikimedia.org/wiki/File:Socrate_du_Louvre.jpg" target = "_blank">
-                                "Socrates", by Eric Gaba, under Creative Commons Attribution-Share Alike 2.5 Generic license
-                            </a>
-                        </figcaption>
-                    </figure>
-                    <p>One of the three greatest thinkers in the history of Western philosophy,
-                        together with Plato and Aristotle, Socrates was an ancient Greek
-                        philosopher who lived in Athens in the fifth century BCE. He was revered by
-                        his followers for his honesty, self-mastery, deep philosophical
-                        understanding, and formidable argumentative skill. He was the first Greek
-                        philosopher to explore ethical issues seriously. He had such a profound
-                        impact on the subsequent development of ancient philosophy that the
-                        philosophers who came before him are now known as the "pre-Socratics". <sup>[2]</sup>
-                    </p>
+                    <div class = "flexDiv">
+                        <figure>
+                            <img src = "./images/socrates.jpg" width = "300" title = "Socrates" alt = "Socrates">
+                            <figcaption>
+                                <a href = "https://commons.wikimedia.org/wiki/File:Socrate_du_Louvre.jpg" target = "_blank">
+                                    "Socrates", by Eric Gaba, under Creative Commons Attribution-Share Alike 2.5 Generic license
+                                </a>
+                            </figcaption>
+                        </figure>
+                        <p>One of the three greatest thinkers in the history of Western philosophy,
+                            together with Plato and Aristotle, Socrates was an ancient Greek
+                            philosopher who lived in Athens in the fifth century BCE. He was revered by
+                            his followers for his honesty, self-mastery, deep philosophical
+                            understanding, and formidable argumentative skill. He was the first Greek
+                            philosopher to explore ethical issues seriously. He had such a profound
+                            impact on the subsequent development of ancient philosophy that the
+                            philosophers who came before him are now known as the "pre-Socratics". <sup>[2]</sup>
+                        </p>
+                    </div>
                     <div id = "socratesFlowChart" class = "circleDiv">
                         <div class = "textCircle" id = "socratesText1">
                             <p>The only life worth living is a <strong>good life</strong>.</p>
@@ -158,27 +158,29 @@
                     <!-- descartes -->
                     <h3>René Descartes</h3>
                     <h4>"I think therefore I am."</h4>
-                    <figure>
-                        <img src = "./images/reneDescartes.jpg" width = "300" title = "René Descartes" alt = "René Descartes">
-                        <figcaption>
-                            <a href = "https://commons.wikimedia.org/wiki/File:Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg" target = "_blank">
-                                "Portrait of the French philosopher and mathematician René Descartes (1596 - 1650)", by Frans Hals, under public domain
-                            </a>
-                        </figcaption>
-                    </figure>
-                    <p>René Descartes was a French mathematician, scientist, and philosopher who
-                        was born in La Haye, Touraine, on March 31, 1596. He is widely recognised
-                        as the founder of modern philosophy because he developed the first modern
-                        version of mind-body dualism and encouraged the development of a new
-                        science based on experimentation and observation. He rejected apparent
-                        knowledge from authority, the senses, and reason by applying a unique
-                        system of methodical doubt. He established new epistemological foundations
-                        based on the intuition that he exists when he is thinking, which he
-                        articulated in the dictum "I think, therefore I am". He created a
-                        metaphysical dualism that makes a sharp distinction between mind, the
-                        essence of which is thinking, and matter, the essence of which is extension
-                        in three dimensions. <sup>[3]</sup>
-                    </p>
+                    <div class = "flexDiv">
+                        <figure>
+                            <img src = "./images/reneDescartes.jpg" width = "300" title = "René Descartes" alt = "René Descartes">
+                            <figcaption>
+                                <a href = "https://commons.wikimedia.org/wiki/File:Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg" target = "_blank">
+                                    "Portrait of the French philosopher and mathematician René Descartes (1596 - 1650)", by Frans Hals, under public domain
+                                </a>
+                            </figcaption>
+                        </figure>
+                        <p>René Descartes was a French mathematician, scientist, and philosopher who
+                            was born in La Haye, Touraine, on March 31, 1596. He is widely recognised
+                            as the founder of modern philosophy because he developed the first modern
+                            version of mind-body dualism and encouraged the development of a new
+                            science based on experimentation and observation. He rejected apparent
+                            knowledge from authority, the senses, and reason by applying a unique
+                            system of methodical doubt. He established new epistemological foundations
+                            based on the intuition that he exists when he is thinking, which he
+                            articulated in the dictum "I think, therefore I am". He created a
+                            metaphysical dualism that makes a sharp distinction between mind, the
+                            essence of which is thinking, and matter, the essence of which is extension
+                            in three dimensions. <sup>[3]</sup>
+                        </p>
+                    </div>
                     <div id = "descartesFlowChart" class = "circleDiv">
                         <div class = "textCircle" id = "descartesText1">
                             <p>An <strong>evil demon</strong> may be <strong>making me believe</strong>
@@ -233,33 +235,38 @@
                     <!-- nietzsche -->
                     <h3>Friedrich Nietzsche</h3>
                     <h4>"Man is something to be surpassed."</h4>
-                    <figure>
-                        <img src = "./images/friedrichNietzsche.jpg" width = "300" title = "Friedrich Nietzsche" alt = "Friedrich Nietzsche">
-                        <figcaption>
-                            <a href = "https://commons.wikimedia.org/wiki/File:Nietzsche187a.jpg" target = "_blank">
-                                "Friedrich Nietzsche", by Friedrich H. Hartmann, under public domain
-                            </a>
-                        </figcaption>
-                        <figcaption>"God is dead. God remains dead. And we have killed him. How
-                            shall we comfort ourselves, the murderers of all murderers? What was
-                            holiest and mightiest of all that the world has yet owned has bled to
-                            death under our knives: who will wipe this blood off us? What water is
-                            there for us to clean ourselves? What festivals of atonement, what
-                            sacred games shall we have to invent?"</figcaption>
-                    </figure>
-                    <p>Above is a picture of the 19th century German philosopher,
-                        Friedrich Nietzsche, as well as a quote which in my opinion sums up his
-                        overall ideology perfectly.
-                    </p>
-                    <p>Friedrich Nietzsche was born in Röcken, Saxony, Prussia (Germany) on October
-                        15, 1844. He was a German classical scholar, philosopher, and cultural
-                        critic who rose to prominence among modern thinkers. Generations of
-                        theologians, philosophers, psychologists, poets, novelists, and playwrights
-                        were greatly impacted by his efforts to expose the motivations underlying
-                        conventional Western religion, morality, and philosophy. Despite his strong
-                        opposition to nationalisatiom, antisemitism, and power politics, fascists
-                        eventually used his name to further the very causes he detested. <sup>[4]</sup>
-                    </p>
+                    <div class = "flexDiv">
+                        <figure>
+                            <img src = "./images/friedrichNietzsche.jpg" width = "300" title = "Friedrich Nietzsche" alt = "Friedrich Nietzsche">
+                            <figcaption>
+                                <a href = "https://commons.wikimedia.org/wiki/File:Nietzsche187a.jpg" target = "_blank">
+                                    "Friedrich Nietzsche", by Friedrich H. Hartmann, under public domain
+                                </a>
+                                <br>
+                                "God is dead. God remains dead. And we have killed him. How shall
+                                we comfort ourselves, the murderers of all murderers? What was
+                                holiest and mightiest of all that the world has yet owned has bled
+                                to death under our knives: who will wipe this blood off us? What
+                                water is there for us to clean ourselves? What festivals of
+                                atonement, what sacred games shall we have to invent?"
+                            </figcaption>
+                        </figure>
+                        <div class = "textDiv">
+                            <p>Towards the left there is a picture of the 19th century German
+                                philosopher, Friedrich Nietzsche, as well as a quote which in my
+                                opinion sums up his overall ideology perfectly.
+                            </p>
+                            <p>Friedrich Nietzsche was born in Röcken, Saxony, Prussia (Germany) on October
+                                15, 1844. He was a German classical scholar, philosopher, and cultural
+                                critic who rose to prominence among modern thinkers. Generations of
+                                theologians, philosophers, psychologists, poets, novelists, and playwrights
+                                were greatly impacted by his efforts to expose the motivations underlying
+                                conventional Western religion, morality, and philosophy. Despite his strong
+                                opposition to nationalisatiom, antisemitism, and power politics, fascists
+                                eventually used his name to further the very causes he detested. <sup>[4]</sup>
+                            </p>
+                        </div>
+                    </div>
                     <div id = "nietzscheFlowChart" class = "circleDiv">
                         <div class = "textCircle" id = "nietzscheText1">
                             <p><strong>Christianity</strong> says that everything in this world is
@@ -279,13 +286,13 @@
                             <p>But in doing this we turn away from <strong>life itself</strong>.</p>
                         </div>
                         <div class = "arrowCircle" id = "nietzscheArrow3">
-                            <strong>&#45;&#45;&#45;&#45;&#45;&#62;</strong>
+                            <strong>V</strong>
                         </div>
                         <div class = "textCircle" id = "nietzscheText4">
                             <p>Christianity's idea of "man" <strong>undermines</strong> us.</p>
                         </div>
                         <div class = "arrowCircle" id = "nietzscheArrow4">
-                            <strong>&#45;&#45;&#45;&#45;&#45;&#62;</strong>
+                            <strong>&#60;&#45;&#45;&#45;&#45;&#45;</strong>
                         </div>
                         <div class = "textCircle" id = "nietzscheText5">
                             <p><strong>We must surpass this limiting idea</strong>. <sup>[1]</sup></p>
@@ -347,65 +354,73 @@
                 <article>
                     <!-- epistemology -->
                     <h3>Epistemology</h3>
-                    <figure>
-                        <img src = "./images/knowledge.png" width = "400" title = "Definition of knowledge" alt = "Definition of knowledge">
-                        <figcaption>
-                            <a href = "https://commons.wikimedia.org/wiki/File:Justified_true_belief.png" target = "_blank">
-                                By Phlsph7, under Creative Commons Attribution-Share Alike 4.0 Intenational license
-                            </a>
-                        </figcaption>
-                    </figure>
-                    <p>Epistemology is defined as the philosophical study of the nature, sources,
-                        and boundaries of human knowledge. The field is sometimes called the theory
-                        of knowledge, as its name is derived from the Greek epistēmē, which means
-                        "knowledge," and logos, which means "reason." <sup>[1]</sup>
-                    </p>
-                    <p>Aristotle once said that philosophy begins in a kind of wonder or
-                        puzzlement. Like the majority of people, epistemologists frequently start
-                        their speculations by assuming they know a lot. However, as they consider
-                        what they presumably know, they find that it is far less secure than they
-                        initially believed, and they even start to think that many of their firmest
-                        views are questionable or even untrue. <sup>[1]</sup>
-                    </p>
-                    <p>Epistemology is thus an attempt to reconcile the differences between what we
-                        think we know and what we actually know. I personally like to think of it
-                        as the study of how perception and reality affect each other. In this
-                        context it may be instinctive to ask, what is reality? What is knowledge?
-                        How can anyone truly know anything? In my experience the fun only starts
-                        after you get over this initial existential crisis.
-                    </p>
+                    <div class = "flexDiv">
+                            <figure>
+                            <img src = "./images/knowledge.png" width = "400" title = "Definition of knowledge" alt = "Definition of knowledge">
+                            <figcaption>
+                                <a href = "https://commons.wikimedia.org/wiki/File:Justified_true_belief.png" target = "_blank">
+                                    By Phlsph7, under Creative Commons Attribution-Share Alike 4.0 Intenational license
+                                </a>
+                            </figcaption>
+                        </figure>
+                        <div class = "textDiv">
+                            <p>Epistemology is defined as the philosophical study of the nature, sources,
+                                and boundaries of human knowledge. The field is sometimes called the theory
+                                of knowledge, as its name is derived from the Greek epistēmē, which means
+                                "knowledge," and logos, which means "reason." <sup>[1]</sup>
+                            </p>
+                            <p>Aristotle once said that philosophy begins in a kind of wonder or
+                                puzzlement. Like the majority of people, epistemologists frequently start
+                                their speculations by assuming they know a lot. However, as they consider
+                                what they presumably know, they find that it is far less secure than they
+                                initially believed, and they even start to think that many of their firmest
+                                views are questionable or even untrue. <sup>[1]</sup>
+                            </p>
+                            <p>Epistemology is thus an attempt to reconcile the differences between what we
+                                think we know and what we actually know. I personally like to think of it
+                                as the study of how perception and reality affect each other. In this
+                                context it may be instinctive to ask, what is reality? What is knowledge?
+                                How can anyone truly know anything? In my experience the fun only starts
+                                after you get over this initial existential crisis.
+                            </p>
+                        </div>
+                    </div>
                 </article>
                 <article>
                     <!-- ethics -->
                     <h3>Ethics</h3>
-                    <figure>
-                        <img src = "./images/ethics.png" width = "400" title = "Ethics" alt = "Ethics">
-                        <figcaption>
-                            <a href = "https://commons.wikimedia.org/wiki/File:Ethics_en.svg" target = "_blank">
-                                By 老陳, under Creative Commons Attribute-Share Alike 3.0 Unported license
-                            </a>
-                        </figcaption>
-                    </figure>
-                    <p>Ethics is defined as the study of what is ethically right and wrong, as well
-                        as good and evil. Any philosophy or system of moral ideals or principles
-                        can also be referred to by this name. <sup>[2]</sup> In other words ethics
-                        is about what we as humans owe to each other. Living an ethical life means
-                        being aware of your moral duties as a person and acting in ways that are
-                        considerate to other people, because the very nature of being a human means
-                        you are not in this life or world alone.
-                    </p>
-                    <p>The main concerns of ethics are the nature of ultimate value and the
-                        criteria by which human activities can be deemed right or wrong. Its
-                        subject consists of the fundamental problems of practical decision making. <sup>[2]</sup>
-                    </p>
-                    <p>Ethics is the philosophical field with the most contributors. In other words
-                        it gets the most attention out of all the main branches of philosophy. And
-                        rightfully so, because ethics literally dictates how each person should
-                        live. What does it mean to live an ethical life? What are the duties and
-                        obligations we must fulfill as citizens of a society? Is it even possible
-                        to live ethically in today's world? Perhaps the first step of living
-                        ethically is to bother asking these questions in the first place.
-                    </p>
+                    <div class = "flexDiv">
+                        <figure>
+                            <img src = "./images/ethics.png" width = "400" title = "Ethics" alt = "Ethics">
+                            <figcaption>
+                                <a href = "https://commons.wikimedia.org/wiki/File:Ethics_en.svg" target = "_blank">
+                                    By 老陳, under Creative Commons Attribute-Share Alike 3.0 Unported license
+                                </a>
+                            </figcaption>
+                        </figure>
+                        <div class = "textDiv">
+                            <p>Ethics is defined as the study of what is ethically right and wrong, as well
+                                as good and evil. Any philosophy or system of moral ideals or principles
+                                can also be referred to by this name. <sup>[2]</sup> In other words ethics
+                                is about what we as humans owe to each other. Living an ethical life means
+                                being aware of your moral duties as a person and acting in ways that are
+                                considerate to other people, because the very nature of being a human means
+                                you are not in this life or world alone.
+                            </p>
+                            <p>The main concerns of ethics are the nature of ultimate value and the
+                                criteria by which human activities can be deemed right or wrong. Its
+                                subject consists of the fundamental problems of practical decision making. <sup>[2]</sup>
+                            </p>
+                            <p>Ethics is the philosophical field with the most contributors. In other words
+                                it gets the most attention out of all the main branches of philosophy. And
+                                rightfully so, because ethics literally dictates how each person should
+                                live. What does it mean to live an ethical life? What are the duties and
+                                obligations we must fulfill as citizens of a society? Is it even possible
+                                to live ethically in today's world? Perhaps the first step of living
+                                ethically is to bother asking these questions in the first place.
+                            </p>
+                        </div>
+                    </div>
                     <h4>Normative ethics</h4>
                     <p>Normative ethics is the area of ethics that deals with standards of what is
                         morally right and wrong. It involves the creation of moral principles that
@@ -443,7 +458,7 @@
                             consequentialism that an action's morality is determined by how it
                             relates to an end that has inherent value, it more closely resembles
                             deontological ethics in that morally right actions are part of the end
-                            itself rather than merely serving as a mean to an end. <sup>[6]</sup>
+                            itself rather than merely serving as a means to an end. <sup>[6]</sup>
                         </p>
                         <p>Aristotle believed that there were certain virtues of mind and
                             character, like courage or generosity, and you should try to develop
@@ -533,72 +548,72 @@
                      <h3>Time for a quiz!</h3>
                      <fieldset>
                         <legend>1. What is epistemology primarily concerned with?</legend>
-                        <label><input type = "radio" name = "q1">The study of beauty and art</label>
-                        <label><input type = "radio" name = "q1">The study of logic and reasoning</label>
-                        <label><input type = "radio" name = "q1" value = "knowledge">The study of human knowledge</label>
+                        <label><input type = "radio" name = "q1">The study of beauty and art</label><br> <!-- align radio buttons -->
+                        <label><input type = "radio" name = "q1">The study of logic and reasoning</label><br>
+                        <label><input type = "radio" name = "q1" value = "knowledge">The study of human knowledge</label><br>
                         <label><input type = "radio" name = "q1">The study of political systems</label>
                      </fieldset>
                      <fieldset>
                         <legend>2. According to Aristotle, what does philosophy begin with?</legend>
-                        <label><input type = "radio" name = "q2">Knowledge</label>
-                        <label><input type = "radio" name = "q2">Faith</label>
-                        <label><input type = "radio" name = "q2" value = "wonder">Wonder</label>
+                        <label><input type = "radio" name = "q2">Knowledge</label><br>
+                        <label><input type = "radio" name = "q2">Faith</label><br>
+                        <label><input type = "radio" name = "q2" value = "wonder">Wonder</label><br>
                         <label><input type = "radio" name = "q2">Logic</label>
                     </fieldset>
                     <fieldset>
                         <legend>3. Ethics is defined as the study of what?</legend>
-                        <label><input type = "radio" name = "q3">The origins of language</label>
-                        <label><input type = "radio" name = "q3" value = "rightness">What is right and wrong, and good and evil</label>
-                        <label><input type = "radio" name = "q3">Historical events and moral changes</label>
+                        <label><input type = "radio" name = "q3">The origins of language</label><br>
+                        <label><input type = "radio" name = "q3" value = "rightness">What is right and wrong, and good and evil</label><br>
+                        <label><input type = "radio" name = "q3">Historical events and moral changes</label><br>
                         <label><input type = "radio" name = "q3">The relationship between science and values</label>
                     </fieldset>
                     <fieldset>
                         <legend>4. Which ethical theory evaluates actions based on their outcomes?</legend>
-                        <label><input type = "radio" name = "q4">Deontology</label>
-                        <label><input type = "radio" name = "q4">Virtue ethics</label>
-                        <label><input type = "radio" name = "q4">Metaethics</label>
+                        <label><input type = "radio" name = "q4">Deontology</label><br>
+                        <label><input type = "radio" name = "q4">Virtue ethics</label><br>
+                        <label><input type = "radio" name = "q4">Metaethics</label><br>
                         <label><input type = "radio" name = "q4" value = "consequentialism">Consequentialism</label>
                     </fieldset>
                     <fieldset>
                         <legend>5. What is a key belief of deontological ethics?</legend>
-                        <label><input type = "radio" name = "q5">Actions are only moral if they produce happiness</label>
-                        <label><input type = "radio" name = "q5">Moral truth depends on cultural norms</label>
-                        <label><input type = "radio" name = "q5" value = "action">Moral value lies in the action itself, not the consequences</label>
+                        <label><input type = "radio" name = "q5">Actions are only moral if they produce happiness</label><br>
+                        <label><input type = "radio" name = "q5">Moral truth depends on cultural norms</label><br>
+                        <label><input type = "radio" name = "q5" value = "action">Moral value lies in the action itself, not the consequences</label><br>
                         <label><input type = "radio" name = "q5">There are no moral truths at all</label>
                     </fieldset>
                     <fieldset>
                         <legend>6. According to virtue ethics, how should one approach life?</legend>
-                        <label><input type = "radio" name = "q6">By maximising utility</label>
-                        <label><input type = "radio" name = "q6">By focusing on personal duty</label>
-                        <label><input type = "radio" name = "q6" value = "virtues">By developing virtues and character</label>
+                        <label><input type = "radio" name = "q6">By maximising utility</label><br>
+                        <label><input type = "radio" name = "q6">By focusing on personal duty</label><br>
+                        <label><input type = "radio" name = "q6" value = "virtues">By developing virtues and character</label><br>
                         <label><input type = "radio" name = "q6">By following legal rules</label>
                     </fieldset>
                     <fieldset>
                         <legend>7. Metaethics is most concerned with:</legend>
-                        <label><input type = "radio" name = "q7" value = "meaning">The meaning and nature of moral statements</label>
-                        <label><input type = "radio" name = "q7">Creating moral rules for society</label>
-                        <label><input type = "radio" name = "q7">Determining the best ethical theory</label>
+                        <label><input type = "radio" name = "q7" value = "meaning">The meaning and nature of moral statements</label><br>
+                        <label><input type = "radio" name = "q7">Creating moral rules for society</label><br>
+                        <label><input type = "radio" name = "q7">Determining the best ethical theory</label><br>
                         <label><input type = "radio" name = "q7">Defining virtues and vices</label>
                     </fieldset>
                     <fieldset>
                         <legend>8. What do moral realists believe about moral statements?</legend>
-                        <label><input type = "radio" name = "q8">They are always relative to culture</label>
-                        <label><input type = "radio" name = "q8" value = "facts">They are objective truths, like facts</label>
-                        <label><input type = "radio" name = "q8">They are illusions with no element of truth</label>
+                        <label><input type = "radio" name = "q8">They are always relative to culture</label><br>
+                        <label><input type = "radio" name = "q8" value = "facts">They are objective truths, like facts</label><br>
+                        <label><input type = "radio" name = "q8">They are illusions with no element of truth</label><br>
                         <label><input type = "radio" name = "q8">They are useful fictions</label>
                     </fieldset>
                     <fieldset>
                         <legend>9. Which view denies the existence of both objective and subjective moral truths?</legend>
-                        <label><input type = "radio" name = "q9">Moral realism</label>
-                        <label><input type = "radio" name = "q9">Moral relativism</label>
-                        <label><input type = "radio" name = "q9">Consequentialism</label>
+                        <label><input type = "radio" name = "q9">Moral realism</label><br>
+                        <label><input type = "radio" name = "q9">Moral relativism</label><br>
+                        <label><input type = "radio" name = "q9">Consequentialism</label><br>
                         <label><input type = "radio" name = "q9" value = "nihilism">Moral nihilism</label>
                     </fieldset>
                     <fieldset>
                         <legend>10. What is my personal stance on metaethical theories?</legend>
-                        <label><input type = "radio" name = "q10">Strongly supports moral nihilism</label>
-                        <label><input type = "radio" name = "q10">Believes entirely in moral realism</label>
-                        <label><input type = "radio" name = "q10" value = "relativism">Leans toward moral relativism but sees value in some absolute moral truths</label>
+                        <label><input type = "radio" name = "q10">Strongly supports moral nihilism</label><br>
+                        <label><input type = "radio" name = "q10">Believes entirely in moral realism</label><br>
+                        <label><input type = "radio" name = "q10" value = "relativism">Leans toward moral relativism but sees value in some absolute moral truths</label><br>
                         <label><input type = "radio" name = "q10">Believes morality cannot be discussed philosophically</label>
                     </fieldset>
                      <button id = "submitButton">submit quiz</button>
@@ -780,26 +795,26 @@
                     <!-- mini game -->
                     <h3>Mini Game</h3>
                     <div id = "gameBox">
-                        <section class = "gameView" id = "view1">
+                        <div class = "gameView" id = "view1">
                             <div class = "trolley" id = "trolley1"></div>
                             <button id = "startButton1">Start</button>
                             <button id = "switchButton">Switch</button>
                             <button id = "resetButton1">Reset</button>
-                        </section>
-                        <section class = "gameView" id = "view2">
+                        </div>
+                        <div class = "gameView" id = "view2">
                             <div class = "trolley" id = "trolley2"></div>
                             <div class = "fatMan" id = "fatMan"></div>
                             <button id = "startButton2">Start</button>
                             <button id = "pushButton1">Push</button>
                             <button id = "resetButton2">Reset</button>
-                        </section>
-                        <section class = "gameView" id = "view3">
+                        </div>
+                        <div class = "gameView" id = "view3">
                             <div class = "trolley" id = "trolley3"></div>
                             <div class = "fatVillain" id = "fatVillain"></div>
                             <button id = "startButton3">Start</button>
                             <button id = "pushButton2">Push</button>
                             <button id = "resetButton3">Reset</button>
-                        </section>
+                        </div>
                     </div>
                     <div id = "controlPanel">
                         <ul>
@@ -841,7 +856,11 @@
             <p>Lab group: 01</p>
             <P>Name: Teng Wan Rui Regina</P>
             <p>Admin number: 252336R</p>
-            <button><a id = "toTop" href = "#top">back to top</a></button>
         </footer>
+        <ul>
+            <li><a id = "toTop" href = "#top">↑</a></li>
+        </ul>
+        <button id = "fullScreenButton"><strong>⛶</strong></button>
+        <button id = "exitScreenButton" class = "hideButton"><strong>⛶</strong></button>
     </body>
 </html>
