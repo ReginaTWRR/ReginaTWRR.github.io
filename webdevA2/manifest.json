@@ -7,9 +7,9 @@
     "theme_color": "#FB8500",
     "icons": [
         {
-            "src": "./images/favicon.ico",
+            "src": "./images/trolley.png",
             "sizes": "64x64",
-            "type": "image/ico"
+            "type": "image/png"
         }
     ]
 }
