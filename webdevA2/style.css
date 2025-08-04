@@ -390,7 +390,7 @@ fieldset {
 .hideButton {
     display: none;
 }
-#toTop {
+ul {
     list-style-type: none;
 }
 #toTop a {
