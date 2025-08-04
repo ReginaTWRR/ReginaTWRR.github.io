@@ -351,14 +351,8 @@ a, summary {
     text-decoration: none;
     color: purple;
 }
-#toTop {
-    color: inherit;
-}
 summary:hover, a:hover {
     color: #0075FA;
-}
-#toTop:hover {
-    color: unset;
 }
 button:hover {
     background: #FFB703;
@@ -397,12 +391,18 @@ fieldset {
     display: none;
 }
 #toTop {
+    list-style-type: none;
+}
+#toTop a {
     position: fixed;
     top: 0px;
     right: 10px;
-    list-style-type: none;
     padding-left: 0px;
     font-size: 50px;
+    color: inherit;
+}
+#toTop a:hover {
+    color: unset;
 }
 /* css for rwd */
 @media (max-width: 800px) {
